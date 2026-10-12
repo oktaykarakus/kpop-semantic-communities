@@ -1,0 +1,12 @@
+# Environment and dependency record
+
+No environment was installed, recreated, or independently validated during this staging task. Version facts below are transcribed from existing task provenance or version records. Import-based dependencies are **inferred requirements**, not proof of a working or complete environment. Do not treat these records as lockfiles or as an independently reproduced environment.
+
+| Task | Recorded Python and versions | Direct/inferred package requirements from imports | Qualification |
+|---|---|---|---|
+| **B** | Python 3.10.19; NumPy 2.2.6; pandas 2.3.3; NetworkX 3.4.2; python-louvain 0.16; scikit-learn 1.7.2. | `numpy`, `pandas`, `networkx`, `python-louvain` (imported as `community`), `scikit-learn`; a pandas parquet engine such as `pyarrow` is inferred from `read_parquet` usage. Standard-library modules also used. | Recorded versions are from Task B `verification.json`/`provenance.md`; no Task B PyArrow version was recorded. Versions do not establish reproducibility on another platform. |
+| **C** | Python 3.10.19; PyGenStability 0.2.5; NumPy 2.2.6; SciPy 1.15.3; pandas 2.3.3; scikit-learn 1.7.2; NetworkX 3.4.2; python-louvain 0.16. | `numpy`, `scipy`, `pandas`, `scikit-learn`, `networkx`, `python-louvain`; `pygenstability`. Matplotlib is imported indirectly during PyGenStability startup in the recorded workflow. | Python/package records and Task C provenance. The exact environment-to-frozen-scan process link is unverified; PyGenStability includes use of a private helper and its optimizer is stochastic. |
+| **D** | Python 3.12.3; NumPy 1.26.4; pandas 2.2.3; SciPy 1.17.1; scikit-learn 1.5.1; NetworkX 3.3; PyArrow 14.0.2. | `numpy`, `pandas`, `scipy`, `scikit-learn`, `networkx`, `pyarrow`. | Recorded in Task D provenance. The runner's exact script-byte-to-output linkage was not recorded there. |
+| **E** | Python 3.10.19; NumPy 2.2.6; pandas 2.3.3; SciPy 1.15.3; NetworkX 3.4.2; PyArrow 23.0.0. | `numpy`, `pandas`, `scipy`, `networkx`, `pyarrow`. | Recorded in Task E provenance. It also requires external Task C/D and WP4 inputs. |
+
+Before publication, prepare separately reviewed environment files only if the authors choose to support execution. Resolve cross-task version compatibility deliberately rather than combining these historical versions into one untested lockfile. Exact package builds, operating-system details, optional/transitive dependencies, and full reproducibility are not established by this record.
