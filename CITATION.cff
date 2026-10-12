@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: >-
+  If you use this analytical-code package, cite the package and the
+  associated manuscript.
+title: "Analytical Code for Semantic Communities and Boundary-Spanning Lyrics in K-pop"
+authors:
+  - family-names: Karakuş
+    given-names: Oktay
+  - family-names: Eyüpoğlu
+    given-names: Can
+version: "1.0.0"
+abstract: >-
+  Analytical scripts supporting Tasks B through E of the K-pop semantic-network
+  study. The package excludes study data and historical inputs and is not a
+  complete end-to-end reproduction archive.

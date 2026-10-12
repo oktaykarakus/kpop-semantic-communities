@@ -1,0 +1,13 @@
+# Keep generated, potentially restricted analysis outputs out of the source release.
+/src/task_b/outputs/
+/src/task_c/.mplconfig/
+/src/task_c/graph.npz
+/src/task_c/*.npy
+/src/task_c/*.csv
+/src/task_c/*.json
+/src/task_d/*.csv
+/src/task_d/*.json
+/src/task_d/*.md
+/src/task_e/*.csv
+/src/task_e/*.json
+/src/task_e/*.md
